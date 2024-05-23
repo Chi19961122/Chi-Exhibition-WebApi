@@ -15,12 +15,12 @@ public partial class _ChiExhDbContext : DbContext
     {
     }
 
-    public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<UserEntity> Users { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<User>(entity =>
+        modelBuilder.Entity<UserEntity>(entity =>
         {
             entity.ToTable("User");
 

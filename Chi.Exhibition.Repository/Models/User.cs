@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Chi.Exhibition.Repository.Models;
 
-public partial class User
+public partial class UserEntity
 {
+    [Key]
     public string UserId { get; set; } = null!;
 
     public string? UserName { get; set; }

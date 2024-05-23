@@ -18,8 +18,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //¨Ì¿àª`¤J
-builder.Services.AddSingleton<IJwtAuthService, JwtAuthService>();
-builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddScoped<IJwtAuthService, JwtAuthService>();
+builder.Services.AddScoped<IUserService, UserService>();
 //builder.AddAutofac();
 
 

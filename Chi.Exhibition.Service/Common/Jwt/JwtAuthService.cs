@@ -1,4 +1,5 @@
 ﻿using Chi.Exhibition.Repository.Configuration;
+using Chi.Exhibition.Repository.Models;
 using Chi.Exhibition.Service.Common.User;
 using Chi.Exhibition.Service.Models.Api;
 using Chi.Exhibition.Service.Models.Api.Enums;
@@ -97,7 +98,7 @@ namespace Chi.Exhibition.Service.Common.Jwt
                 new Claim(JwtRegisteredClaimNames.Iss, issuer),
                 new Claim(JwtRegisteredClaimNames.Sub, jwtLoginViewModel.Account!),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.Role, user.Role)
+                //new Claim(ClaimTypes.Role, user.Role)
             };
 
             ClaimsIdentity userClaimsIdentity = new(claims);
