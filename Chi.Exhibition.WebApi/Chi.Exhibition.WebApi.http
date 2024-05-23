@@ -1,0 +1,6 @@
+@Chi.Exhibition.WebApi_HostAddress = http://localhost:5285
+
+GET {{Chi.Exhibition.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
